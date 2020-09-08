@@ -8,8 +8,9 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Bank.jar" size="2658580" download="eager" />
+    <jar href="Bank.jar" size="3895313" download="eager" />
     <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\mssql-jdbc-8.4.0.jre8.jar" size="1300742" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="bank.Bank"  name="Bank" />
   <update check="always"/>

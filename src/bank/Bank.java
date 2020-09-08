@@ -27,6 +27,7 @@ public class Bank extends Application {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.show();
+        DBconnection db = new DBconnection();
     }
 
     /**
