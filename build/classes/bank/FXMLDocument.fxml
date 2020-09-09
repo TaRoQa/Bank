@@ -42,7 +42,7 @@
             <JFXTextField fx:id="repass" layoutX="118.0" layoutY="408.0" prefHeight="45.0" prefWidth="620.0" promptText="Re-Password" />
             <JFXComboBox fx:id="status" layoutX="488.0" layoutY="494.0" prefHeight="31.0" prefWidth="116.0" promptText="Status" />
             <JFXComboBox fx:id="gender" layoutX="632.0" layoutY="494.0" prefHeight="31.0" prefWidth="116.0" promptText="Gender" />
-            <JFXDatePicker fx:id="birthdate" layoutX="121.0" layoutY="494.0" prefHeight="31.0" prefWidth="340.0" promptText="Birthdate" />
+            <JFXDatePicker fx:id="birthdate" defaultColor="#130f40" layoutX="121.0" layoutY="494.0" prefHeight="31.0" prefWidth="340.0" promptText="Birthdate" />
          </children>
       </AnchorPane>
    </right>

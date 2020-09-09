@@ -8,7 +8,8 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Bank.jar" size="3895313" download="eager" />
+    <jar href="Bank.jar" size="4437576" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
     <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
     <jar href="lib\mssql-jdbc-8.4.0.jre8.jar" size="1300742" download="eager" />
   </resources>

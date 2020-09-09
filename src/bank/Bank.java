@@ -22,7 +22,7 @@ public class Bank extends Application {
     
    @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/bank/views/LoginPage.fxml"));
         Scene scene = new Scene(root);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
@@ -106,7 +106,7 @@ private String Name,Emai,Gender,Bithdate,Address,Password;
      }
      
   }
- class bank
+ public class bank
  {
      private String ID,Location,Phone;
      private  float Rate;
@@ -161,7 +161,7 @@ private String Name,Emai,Gender,Bithdate,Address,Password;
         }
      
  }
- class Admain extends Person
+ public class Admain extends Person
  {
 
         public Admain() {
@@ -172,7 +172,7 @@ private String Name,Emai,Gender,Bithdate,Address,Password;
         }
      
  }
- class Client extends Person
+ public class Client extends Person
  {
 
         public Client() {
@@ -183,7 +183,7 @@ private String Name,Emai,Gender,Bithdate,Address,Password;
         }
      
  }
- class Employee extends Person
+ public class Employee extends Person
  {
 
         public Employee() {

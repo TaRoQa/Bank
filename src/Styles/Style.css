@@ -1,0 +1,12 @@
+.login-btn{
+    background: linear-gradient(150deg,rgb(19,15,64),rgb(223,249,251));
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-size: 200%;
+    outline: none;
+
+}
+.login-btn:hover{
+        background-size: 100%;
+}

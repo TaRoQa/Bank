@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1228.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.controllers.LoginPageController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="378.0" style="-fx-background-color: #130f40;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="207.0" fitWidth="210.0" layoutX="111.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="111.0">
+               <image>
+                  <Image url="@../../Images/Bank%20Logo.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <BorderPane prefHeight="200.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIconView fill="#3ae374" glyphName="CIRCLE" layoutX="748.0" layoutY="31.0" onMouseClicked="#Min" size="1.5em" />
+                  <FontAwesomeIconView fx:id="Maximizebtn" fill="#ffaf40" glyphName="CIRCLE" layoutX="778.0" layoutY="31.0" onMouseClicked="#Max" size="1.5em" AnchorPane.topAnchor="15.571428298950195" />
+                  <FontAwesomeIconView fx:id="Minimizebtn" fill="#eab543" glyphName="CIRCLE" layoutX="778.0" layoutY="31.0" onMouseClicked="#Minimize" size="1.5em" visible="false" />
+                  <FontAwesomeIconView fill="#ff3838" glyphName="CIRCLE" layoutX="808.0" layoutY="31.0" onMouseClicked="#Close" size="1.5em" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="676.0" prefWidth="850.0" styleClass="login-btn" stylesheets="@../../Styles/Style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField layoutX="247.0" layoutY="245.0" prefHeight="34.0" prefWidth="395.0" promptText="Username" />
+                  <JFXTextField layoutX="247.0" layoutY="372.0" prefHeight="34.0" prefWidth="395.0" promptText="Password" />
+                  <Label layoutX="398.0" layoutY="106.0" prefHeight="53.0" prefWidth="99.0" text="Login">
+                     <font>
+                        <Font name="Leelawadee Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="247.0" layoutY="425.0" opacity="0.7" prefHeight="27.0" prefWidth="153.0" text="Forget Password ?">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton id="login-btn" alignment="CENTER" layoutX="494.0" layoutY="421.0" prefHeight="20.0" prefWidth="148.0" stylesheets="@../../Styles/Style.css" text="Login">
+                     <font>
+                        <Font name="Leelawadee Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </right>
+</BorderPane>

@@ -1,73 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
-<?import javafx.geometry.Point3D?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Label?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.BorderPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1228.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.FXMLController">
-   <children>
-      <AnchorPane prefHeight="760.0" prefWidth="1228.0" style="-fx-background-color: #ffffff;">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1228.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.FXMLController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="378.0" style="-fx-background-color: #130f40;" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutX="225.0" prefHeight="49.0" prefWidth="813.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <AnchorPane layoutX="276.0" layoutY="24.0" prefHeight="1.0" prefWidth="813.0" style="-fx-background-color: #130f40;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                  <JFXButton focusTraversable="false" layoutX="1144.0" layoutY="5.0" prefHeight="27.0" prefWidth="35.0" text="_">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </JFXButton>
-                  <JFXButton focusTraversable="false" layoutX="1179.0" layoutY="6.0" prefHeight="27.0" prefWidth="35.0" text="X">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </JFXButton>
-               </children>
-            </AnchorPane>
-            <JFXTextField fx:id="email" layoutX="593.0" layoutY="301.0" prefHeight="45.0" prefWidth="420.0" promptText="Email" AnchorPane.topAnchor="300.0" />
-            <JFXTextField fx:id="password" layoutX="593.0" layoutY="392.0" prefHeight="45.0" prefWidth="420.0" promptText="Password" AnchorPane.topAnchor="400.0" />
-            <JFXButton fx:id="regist" focusTraversable="false" layoutX="942.0" layoutY="629.0" prefHeight="51.0" prefWidth="198.0" text="Login" textFill="#130f40">
-               <font>
-                  <Font name="Leelawadee Bold" size="26.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="593.0" layoutY="451.0" prefHeight="36.0" prefWidth="156.0" text="Forget Your Password ?" textFill="#21045ecc">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Label alignment="CENTER" layoutX="698.0" layoutY="114.0" prefHeight="99.0" prefWidth="211.0" text="Login" textAlignment="CENTER">
-               <font>
-                  <Font name="Leelawadee Bold" size="48.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <AnchorPane prefHeight="760.0" prefWidth="415.0" style="-fx-background-color: #130f40;">
-         <rotationAxis>
-            <Point3D />
-         </rotationAxis>
-         <children>
-            <ImageView fitHeight="207.0" fitWidth="210.0" layoutX="127.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="120.0">
+            <ImageView fitHeight="201.0" fitWidth="212.0" layoutX="113.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Images/Bank%20Logo.PNG" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-   </children>
-</AnchorPane>
+   </left>
+   <right>
+      <BorderPane prefHeight="200.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIconView fill="#3ae374" glyphName="CIRCLE" layoutX="748.0" layoutY="31.0" onMouseClicked="#Min" size="1.5em" />
+                  <FontAwesomeIconView fx:id="Maximizebtn" fill="#ffaf40" glyphName="CIRCLE" layoutX="778.0" layoutY="31.0" onMouseClicked="#Max" size="1.5em" AnchorPane.topAnchor="15.571428298950195" />
+                  <FontAwesomeIconView fx:id="Minimizebtn" fill="#eab543" glyphName="CIRCLE" layoutX="778.0" layoutY="31.0" onMouseClicked="#Minimize" size="1.5em" visible="false" />
+                  <FontAwesomeIconView fill="#ff3838" glyphName="CIRCLE" layoutX="808.0" layoutY="31.0" onMouseClicked="#Close" size="1.5em" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="676.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField layoutX="247.0" layoutY="245.0" prefHeight="34.0" prefWidth="395.0" promptText="Username" />
+                  <JFXTextField layoutX="247.0" layoutY="372.0" prefHeight="34.0" prefWidth="395.0" promptText="Password" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </right>
+</BorderPane>
